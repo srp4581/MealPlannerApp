@@ -10,7 +10,7 @@ object TimeUtils {
     /** Formats the number of milliseconds since epoch into a human-readable display */
     fun format(epochMillis: Long) =
         if (epochMillis >= 0) {
-            val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+            val formatter = DateTimeFormatter.ofPattern("MMMM dd yyyy")
             formatter.format(
                 LocalDateTime.ofInstant(Instant.ofEpochMilli(epochMillis), ZoneId.systemDefault())
             )
@@ -24,7 +24,7 @@ object TimeUtils {
      */
     fun parse(dateString: String) =
         try {
-            val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+            val formatter = DateTimeFormatter.ofPattern("MMMM dd yyyy")
             LocalDateTime.parse(dateString, formatter)
                 .atZone(ZoneId.systemDefault())
                 .toInstant()
