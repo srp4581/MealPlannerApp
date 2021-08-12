@@ -22,10 +22,113 @@
         android:id="@+id/savedDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/datePickerButton"
-        tools:text="I can only be seen in the preview!"/>
+        tools:text="I can only be seen in the preview!" />
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="484dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savedDateText"
+        app:layout_constraintVertical_bias="0.138"
+        tools:layout_editor_absoluteX="-4dp">
+
+        <!--Sunday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sun_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sun_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Monday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mon_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mon_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/monday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Tuesday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tues_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tues_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Wednesday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wed_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/wed_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Thursday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/thurs_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/thurs_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Friday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fri_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fri_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Saturday TextField-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sat_textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sat_breakfast_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

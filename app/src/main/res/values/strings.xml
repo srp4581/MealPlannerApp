@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MealPlannerApp</string>
+    <string name="sun_breakfast_label">sunday</string>
+    <string name="mon_breakfast_label">monday</string>
+    <string name="tues_breakfast_label">tuesday</string>
+    <string name="wed_breakfast_label">wednesday</string>
+    <string name="thurs_breakfast_label">thursday</string>
+    <string name="fri_breakfast_label">friday</string>
+    <string name="sat_breakfast_label">saturday</string>
 </resources>
